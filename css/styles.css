@@ -1,0 +1,103 @@
+/*for the body*/
+
+body{
+  text-align: center;
+  background-color: hsl(240, 78%, 98%) ;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.anually-monthly{
+  display: flex;
+  justify-content: center;
+}
+
+/*catalog configuration*/
+.basic-plan, .professional-plan, .master-plan{
+  border-radius: 1rem;
+  padding: 0 2rem;
+}
+
+.basic-plan, .master-plan{
+  height: max-content;
+}
+
+.features-list{
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.price{
+  font-size: 5rem;
+  margin: 2rem 0;
+}
+
+/*for toogling button*/
+.checking-box{
+  margin:1.5rem 0 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.type-plan{
+  margin: 0 2rem;
+}
+
+input[type="checkbox"]{
+  -webkit-appearance: none;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  border-radius: 50px;
+  outline: none;
+}
+
+input[type="checkbox"]::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #fff ;
+  border-radius: 50px;
+  transition: all 1s ease;
+}
+
+input:checked:before {
+  transform: translate(100%);
+  transition: all 1s ease;
+}
+
+/*for basic plan*/
+.basic-plan{
+  background-color: #fff;
+}
+
+/*for professional plan*/
+.professional-plan{
+  background-image: linear-gradient(to bottom right, hsl(237, 63%, 64%), hsl(236, 72%, 79%));
+  height: 37rem;
+  position: relative;
+  bottom: 2rem;
+}
+
+/*for master plan*/
+.master-plan{
+  background-color: #fff;
+}
+
+/*for button*/
+.plan-button{
+  width: 20rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border-style: none;
+  margin: 1rem 0 3rem 0;
+}
+
+
+.left-button, .right-button{
+  background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
