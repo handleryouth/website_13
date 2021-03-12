@@ -1,5 +1,83 @@
-/*for the body*/
 
+/*for the background image*/
+.bottom-img, .top-img{
+  position: absolute;
+}
+.top-img{right: 0px;
+left: 73rem;
+top: 0px;
+z-index: -1;}
+
+.bottom-img{left: 0px;
+bottom: 0px;
+top: 35rem;
+z-index: -1;}
+
+
+@media (max-width:1418px){
+  .top-img{
+    left: 65rem;
+  }
+}
+
+@media (max-width:1299px){
+  .top-img{
+    left: 59rem;
+  }
+}
+
+@media (max-width:1195px){
+  .top-img{
+    left: 51rem;
+  }
+}
+
+@media (max-width:1071px){
+  .top-img{
+    left:44rem;
+  }
+}
+
+@media (max-width:870px){
+  .top-img{
+    left:35rem;
+  }
+}
+
+@media (max-width:733px){
+  .top-img{
+    left:30rem;
+  }
+
+}
+
+
+@media (max-width:637px){
+  .top-img{
+    left: 27rem;
+    width: 20rem;
+  }
+}
+
+@media (max-width:573px){
+  .top-img{
+    left: 22rem;
+    width: 17rem;
+  }
+}
+
+@media (max-width:435px){
+  .top-img{
+    left: 16rem;
+  }
+
+  .big-title{
+    margin-top: 4rem;
+  }
+
+}
+
+/*for the body*/
 body{
   text-align: center;
   background-color: hsl(240, 78%, 98%) ;
@@ -97,6 +175,7 @@ input:checked:before {
   height: 37rem;
   position: relative;
   bottom: 2rem;
+  color: #fff;
 }
 
 .price2{
