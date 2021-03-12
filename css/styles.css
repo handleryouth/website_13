@@ -175,7 +175,7 @@ input:checked:before {
 }
 }
 
-@media(max-width:1018px){
+@media (max-width:1018px){
   /*for plan column*/
   .basic-plan, .professional-plan, .master-plan{
     padding: 0;
@@ -187,7 +187,7 @@ input:checked:before {
   }
 }
 
-@media(max-width:922px){
+@media (max-width:922px){
   .anually-monthly{
     flex-direction: column;
     align-items: center;
@@ -198,13 +198,17 @@ input:checked:before {
 }
 }
 
-@media(max-width:433px){
+@media (max-width:433px){
   .basic-plan, .professional-plan, .master-plan{
     width: 100%;
   }
 }
 
-@media(max-width:412px){
+@media (max-width:389px){
+  .type-plan{
+    margin:0 1rem;
+  }
+
   input[type="checkbox"]{
     width: 80px;
     height: 40px;
