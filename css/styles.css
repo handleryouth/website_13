@@ -1,9 +1,10 @@
 
 /*for the background image*/
+
 .bottom-img, .top-img{
   position: absolute;
-
 }
+
 .top-img{right: 0px;
 left: 73rem;
 top: 0px;
@@ -39,51 +40,20 @@ z-index: -1;}
   }
 }
 
-@media (max-width:870px){
-  .top-img{
-    left:35rem;
+@media (max-width:922px){
+  .top-img, .bottom-imh{
+    visibility: hidden;
+    display: none;
   }
 }
 
-@media (max-width:733px){
-  .top-img{
-    left:30rem;
-  }
-
-}
-
-
-@media (max-width:637px){
-  .top-img{
-    left: 27rem;
-    width: 20rem;
-  }
-}
-
-@media (max-width:573px){
-  .top-img{
-    left: 22rem;
-    width: 17rem;
-  }
-}
-
-@media (max-width:435px){
-  .top-img{
-    left: 16rem;
-  }
-
-  .big-title{
-    margin-top: 4rem;
-  }
-
-}
 
 /*for the body*/
 body{
+  position: relative;
   text-align: center;
   background-color: hsl(240, 78%, 98%) ;
   font-family: 'Montserrat', sans-serif;
-  overflow: hidden;
 }
 
 .anually-monthly{
@@ -118,6 +88,7 @@ body{
   justify-content: center;
   align-items: center;
   transition: all 0.6s ease;
+
 }
 
 .type-plan{
@@ -272,6 +243,7 @@ input:checked:before {
   .anually-monthly{
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
   .basic-plan, .professional-plan, .master-plan{
     width: 27rem;
