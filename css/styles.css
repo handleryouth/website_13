@@ -26,7 +26,7 @@ body{
   margin: 1rem 0;
 }
 
-.price{
+.price1, .price2, .price3{
   font-size: 5rem;
   margin: 2rem 0;
 }
@@ -37,6 +37,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.6s ease;
 }
 
 .type-plan{
@@ -53,6 +54,11 @@ input[type="checkbox"]{
   outline: none;
 }
 
+.checking-box:hover{
+  opacity: 0.6;
+  transition: all 0.6s ease;
+}
+
 input[type="checkbox"]::before{
   content: "";
   position: absolute;
@@ -62,12 +68,22 @@ input[type="checkbox"]::before{
   width: 50px;
   background-color: #fff ;
   border-radius: 50px;
-  transition: all 1s ease;
+  transition: all 0.7s ease;
 }
 
 input:checked:before {
   transform: translate(100%);
-  transition: all 1s ease;
+  transition: all 0.7s ease;
+}
+
+.animation, .remove{
+  animation-name: changing;
+  animation-duration: 2s;
+}
+
+@keyframes changing {
+  from{opacity: 1}
+  to{opacity: 0}
 }
 
 /*for basic plan*/
@@ -83,6 +99,11 @@ input:checked:before {
   bottom: 2rem;
 }
 
+.price2{
+  color: #fff;
+
+}
+
 /*for master plan*/
 .master-plan{
   background-color: #fff;
@@ -95,9 +116,90 @@ input:checked:before {
   border-radius: 0.5rem;
   border-style: none;
   margin: 1rem 0 3rem 0;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3rem;
+  color: #fff;
+  transition: all 0.5s ease;
 }
+
+.plan-button:hover{
+  background-image: none;
+  border-style: solid;
+  transition: all 0.5s ease;
+}
+
 
 
 .left-button, .right-button{
   background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+.middle-button{
+  color: hsl(237, 63%, 64%);
+
+}
+
+
+.left-button:hover, .right-button:hover{
+  background-color: #fff;
+  border-color: hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+}
+
+.middle-button:hover{
+  background-color: transparent;
+  border-color: #fff;
+  color:#fff;
+}
+
+
+@media(max-width:1168px){
+  hr{
+    width: 15rem;
+  }
+/*for plan*/
+.basic-plan, .professional-plan, .master-plan{
+  padding: 0 1rem;
+}
+
+/*for price tag*/
+  .price1,.price2, .price3{
+    font-size: 3rem;
+  }
+
+/*for button*/
+.plan-button{
+  width: 15rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+}
+
+@media(max-width:1018px){
+  /*for plan column*/
+  .basic-plan, .professional-plan, .master-plan{
+    padding: 0;
+    width: max-content;
+  }
+/*for price tag*/
+  .price1,.price2, .price3{
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:922px){
+  .anually-monthly{
+    flex-direction: column;
+    align-items: center;
+  }
+  .basic-plan, .professional-plan, .master-plan{
+    width: 27rem;
+    margin-bottom: 5rem;
+}
+}
+
+@media(max-width:433px){
+  .basic-plan, .professional-plan, .master-plan{
+    width: 100%;
+  }
 }
