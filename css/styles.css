@@ -275,11 +275,20 @@ input:checked:before {
     width: 27rem;
     margin-bottom: 5rem;
 }
+
+.bottom-img{
+  top: 108rem;
+}
 }
 
 @media (max-width:433px){
   .basic-plan, .professional-plan, .master-plan{
     width: 100%;
+  }
+
+  .bottom-img{
+    display: none;
+    visibility: hidden;
   }
 }
 
